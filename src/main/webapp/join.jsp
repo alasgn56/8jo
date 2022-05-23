@@ -3,14 +3,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+<title>회원가입</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">      
+    <link rel="stylesheet" href="./process/css/bootstrap.min.css?ver=1.02">
     <link rel="stylesheet" href="./process/css/join.css?ver=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css?ver=1.0" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <script>
@@ -43,9 +45,10 @@ function idon(){
         document.getElementById('emailinput').value = abc;
     }
 </script>
+
 <body>
     <section>       
-        <form action="">
+        <form action="1.do" method="post">
             <div>
                 <div class="join_title">
                     <img src="./process/img/로고-006.png" alt="">
@@ -88,14 +91,14 @@ function idon(){
                         <div>이메일</div>
                         <div class="email_box">
                             <div class="first_em">
-                                <input type="text" name="email"  maxlength="20">&nbsp;@&nbsp; 
+                                <input type="text" name="email1"  maxlength="20">&nbsp;@&nbsp; 
                             </div> 
                             <div class="second_em">
-                                <select id="email" name="email" onchange="idon()">
+                                <select id="email" name="email2" onchange="idon()">
                                     <option value="">직접입력</option>
-                                    <option value="naver">네이버</option>
-                                    <option value="hanmail">다음</option>
-                                    <option value="gmail">G메일</option>
+                                    <option value="@naver.com">naver.com</option>
+                                    <option value="@hanmail.net">daum.net</option>
+                                    <option value="@gmail.com">gamil.com</option>
                                 </select>
                                 <input type="text" id="emailinput" name="email_address" maxlength="20">
                             </div>
@@ -105,16 +108,15 @@ function idon(){
                         <div>지역 선택</div>
                         <select name="join_address1">
                             <option>::시도선택::</option>
-                            <option value="gsnd">경상남도</option>
+                            <option value="경상남도">경상남도</option>
                         </select>
                         <select name="join_address2">
                             <option>::상세선택::</option>
-                            <option value="cws">창원시</option>
-                            <option value="mhab">창원시 마산합포구</option>
-                            <option value="mhwe">창원시 마산회원구</option>
-                            <option value="cwss">창원시 성산구</option>
-                            <option value="cweu">창원시 의창구</option>
-                            <option value="cwjin">창원시 진해구</option>
+                            <option value="창원시 마산합포구">창원시 마산합포구</option>
+                            <option value="창원시 마산회원구">창원시 마산회원구</option>
+                            <option value="창원시 성산구">창원시 성산구</option>
+                            <option value="창원시 의창구">창원시 의창구</option>
+                            <option value="창원시 진해구">창원시 진해구</option>
                         </select>
                     </div>
                     <div class="consent">
@@ -331,8 +333,8 @@ function idon(){
                         </div>
                     </div>   
                     <div class="btn-area">
-                        <button type="submit">등록</button>
-                        <button><a href="http://127.0.0.1:5500/main.html">취소</a></button>
+                        <button type="submit"><a href="#">등록</a></button>
+                        <button><a href="#">취소</a></button>
                     </div>   
                 </div>
             </div>
