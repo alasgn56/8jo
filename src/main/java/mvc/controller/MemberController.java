@@ -9,8 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import mvc.model.MemberDAO;
-import mvc.model.MemberDTO;
+import mvc.DAO.LoginDAO;
+import mvc.DAO.MemberDAO;
+import mvc.DTO.MemberDTO;
 
 public class MemberController extends HttpServlet{
 	
@@ -36,6 +37,11 @@ public class MemberController extends HttpServlet{
 			dao.insertMember(request); //데이터 베이스에 저장
 			RequestDispatcher rd = request.getRequestDispatcher("/main.jsp"); //경로로 이동
 			rd.forward(request, response); //이동중 가지고 갈 값
+		}
+		if(command.equals("/2.do")) {
+			LoginDAO dao1= LoginDAO.getInstance();
+			dao1.Login(request);
+			response.sendRedirect("main.jsp");
 		}
 	}
 
