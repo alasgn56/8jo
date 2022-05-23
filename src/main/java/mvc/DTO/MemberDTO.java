@@ -1,4 +1,4 @@
-package mvc.model;
+package mvc.DTO;
 
 import java.util.Date;
 

@@ -1,4 +1,4 @@
-package mvc.model;
+package mvc.DAO;
 
 import java.io.IOException;
 import java.sql.Connection;

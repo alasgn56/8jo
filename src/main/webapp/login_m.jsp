@@ -30,7 +30,7 @@
 <body>
     <section class="login-form">
         <h1>로그인</h1>
-        <form action="login.aa">
+        <form action="2.do">
             <div class="int-area">
                 <input type="text" name="id" id="id" autocomplete="off" placeholder="USER NAME" required>
                 <!-- <label for="id">USER NAME</label> -->
@@ -40,7 +40,7 @@
                 <!-- <label for="pw">PASSWORD</label> -->
             </div>
             <div class="chkbox">
-                <input type="checkbox" name="chkb"><span>아이디 저장</span>
+                <input type="checkbox" name="chkb" value="1"><span>아이디 저장</span>
             </div>
             <div class="btn-area">
                 <button type="submit">LOGIN</button>
