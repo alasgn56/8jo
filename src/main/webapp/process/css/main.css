@@ -349,6 +349,10 @@ body{
     border-radius: 15px;
 }
 
+.section4 > div.container > div.list-row > div.list-item > a > img:hover{
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
 .section4 > div.container > div.list-row > div.list-item > a > div > div{
     margin: 5px 0;
 }
