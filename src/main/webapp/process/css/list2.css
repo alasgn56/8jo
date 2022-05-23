@@ -1,0 +1,50 @@
+*{margin:0px auto; padding : 0px;  color: black; text-decoration: none; list-style : none; box-sizing: border-box;}
+body{width: 100%; height: 100vh;  }
+div.container {width: 60%;height: 100%; display: flex; flex-direction: column;  justify-content : center; align-items : center;}
+
+div>h2{margin-bottom:20px;}
+div>form>fieldset.box1{width: 600px; height: 700px;}
+div>form>fieldset.box1>div{display: flex; font-size: 20px; margin-bottom: 17px; }
+div>form>fieldset.box1>div.a{display: flex;}
+div>form>fieldset.box1>div.a>p>input{width: 95%}
+div>form>fieldset.box1>div.b{height: 40%; width: 100%;}
+div>form>fieldset.box1>div.b>p>textarea{height: 100%; width: 95%; } 
+div>form>fieldset.box1>div:first-child{padding-top: 15px;}
+div>form>fieldset.box1>div:nth-child(5){padding: 20px 0;}
+div>form>fieldset>div>p:first-child{width: 20%; text-align: center;}
+div>form>fieldset>div>p:last-child{width: 80%; text-align: left;}
+div>form>fieldset>div>div{width: 80%; position: relative; height: 100%;}
+div>form>fieldset>div>div>p{padding: 0; margin: 0; position: absolute;} 
+div>form>fieldset>div>p>input{padding: 5px 0;}
+div>form>fieldset>div>p>input:nth-child(2){margin-left: 10px;}
+div>form>fieldset>div>input.submit{padding: 10px 60px; background-color: white;}
+div>form>fieldset>div>input.reset{padding: 10px 60px; background-color: white;}
+
+.container > form > fieldset > div > a> img{width: 100px;height: 100px;}
+.container > form > fieldset > div > a{border: 1px solid black;}
+
+.star {
+    position: relative;
+    color: #ddd;
+  }
+  
+  .star input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .star span {
+    width: 0;
+    position: absolute; 
+    left: 0;
+    color: red;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  div>form>fieldset>div>div>input{display: none;}
+  .star-box p{font-size: 18px;font-family: 'noto-r';text-align: center;}
+  .star-box p span{font-family: 'noto-b';color: #000;font-size: 20px;padding:0 5px;}

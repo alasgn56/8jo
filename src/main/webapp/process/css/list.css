@@ -1,0 +1,82 @@
+*{margin:0px auto; padding : 0px;  color: black; text-decoration: none; list-style : none; box-sizing: border-box;}
+.section{display: flex; width: 80%; margin-top: 100px;}
+section > div.a{width: 70%; margin-right: 10px;}
+section > div.a>div.c{display: flex; justify-content: space-between;  padding: 0 0 5px 10px; margin-bottom: 20px; border-bottom: 2px solid rgba(128, 128, 128, 0.397) ;}
+section > div.a>div.c > p{margin: 0; font-size: 40px;}
+section > div.a>div.c > button{margin: 0; line-height: 60px; background-color: white; border: none; font-size: 25px;}
+section > div.a>div:nth-child(2){display: flex; width: 100%; flex-wrap: wrap;}
+section > div.a>div:nth-child(2)>div.shoplist{display: flex; margin: 0; height: 250px; width:50%; padding: 10px;}
+section > div.a>div:nth-child(2)>div.shoplist>a{display: flex; width: 100%;}
+section > div.a>div:nth-child(2)>div.shoplist>a>img{width: 40%; height: 100%; margin: 0;}
+section > div.a>div:nth-child(2)>div.shoplist>a>div{overflow: hidden;  width: 100%; margin: 0 0 0 15px; text-align: left; display: flex; flex-direction: column; justify-content: space-between; }
+section > div.a>div:nth-child(2)>div.shoplist>a>div>div{text-align: start; margin: 0; width: 100%; }
+section > div.a>div:nth-child(2)>div.shoplist>a>div>div:first-child{height: 85%; overflow: hidden;}
+section > div.a>div:nth-child(2)>div.shoplist>a>div>div>div>div:nth-child(2){display: -webkit-box; text-overflow: ellipsis;-webkit-line-clamp:5;-webkit-box-orient:vertical; overflow: hidden;}
+section > div.a>div:nth-child(2)>div.shoplist>a>div>div:last-child{height: 15%; overflow: hidden;}
+section > div.a>div:nth-child(2)>div.shoplist>a>div>div>h3{font-size: 25px; padding-bottom: 5px; width: 100%;  overflow: hidden;}
+section > div.a>div:nth-child(2)>div.shoplist>a>div>div>h3>span:first-child{padding-right: 5px; text-overflow:ellipsis ;}
+section > div.a>div:nth-child(2)>div.shoplist>a>div>div>h3>span:last-child{color: #3586ff;}
+section > div.a>div:nth-child(2)>div.shoplist>a>div>div:last-child{padding-bottom: 15px;}
+section > div.a>div:nth-child(2)>div.shoplist>a>div>div>div{padding: 5px 0; display: flex; text-align: start; margin: 0;}
+section > div.a>div:nth-child(2)>div.shoplist>a>div>div>div>div:first-child{width: 30%;}
+section > div.a>div:nth-child(2)>div.shoplist>a>div>div>div>div:last-child{width: 70%;}
+
+section > div.a>div:nth-child(3){font-size: 25px; text-align: center; padding: 20px 0;}
+section > div.a>div:nth-child(3)>a{padding: 0 10px;}
+
+section > div.b{width: 30%;}
+section > div.b >div:nth-child(2) > div {position: relative; margin-top: 30px;}
+section > div.b >div:nth-child(2) > div > img:first-child{position: absolute;  width: 20%; height: 20%; background-color: transparent; top: 10px; left: 10px;}
+section > div.b >div:nth-child(2) > div > img:nth-child(2){width: 100%; height: 300px;}
+section > div.b >div:nth-child(2) > div > p{position: absolute; top: 250px; left: 15%; text-align: center; color: green;}
+
+.modal_wrap{
+    display: none;
+    width: 550px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin: -250px 0 0 -250px;
+    background:lightgray;
+    z-index: 3;
+    padding: 20px;
+}
+.black_bg{
+    display: none;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0,0, 0.5);
+    top:0;
+    left: 0;
+    z-index: 2;
+}
+.modal_close{
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: -30px;
+    right: 0;
+    
+}
+.modal_close> a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+    text-indent: -9999px;
+}
+
+
+/* 위치값 잡아주기 */
+.region_select{display: flex; justify-content: center; align-items: center; border: 1px solid black;}
+fieldset > div > div > .region1 > a{ color: black;}
+.region1{border: 1px solid black; border-bottom: 0; padding: 5px 3px;}
+.button_box{border: 1px solid black; display: flex; justify-content: center; align-items: center;  text-align: center;}
+.button_box > button{margin: 20px; padding: 10px 15px; border: none; border-radius: 10px; background-color:lightblue;}
+
+
+
+
+

@@ -1,0 +1,88 @@
+*{margin: 0; padding: 0; text-decoration: none; font-family: 'Jua', sans-serif;}
+body{background: url("../img/back.png") no-repeat center;background-size:cover;}
+body::before{ content: ""; position: absolute; z-index: 1;top: 0; right: 0; bottom: 0; left: 0;background-color: rgba(0,0,0,.0);}
+section{ width: 100vw; height: 100vh; display: flex; justify-content: center;align-items: center;}
+section > form { z-index: 3; background-color : rgba(255, 255, 255); border-radius: 20px; padding: 30px 50px;}
+
+section > form > div{width: 600px;height: 800px;display: flex; flex-direction: column; align-items: center;}
+input{box-sizing: border-box;}
+section > form > div > .join_title{display: flex; margin: 0 0 20px 0; color: rgb(255, 125, 39,0.92); font-size: 32px;}
+section > form > div > .join_title > img{width: 120px;height: 120px; padding-right: 20px;}
+section > form > div > .join_title > h3{line-height: 120px;}
+section > form > div > .join_box{width: 90%; display: flex;flex-direction: column;}
+section > form > div > .join_box > .text_box,
+section > form > div > .join_box > .phone,
+section > form > div > .join_box > .date,
+section > form > div > .join_box > .Area_choice{width: 100%; height: 50px; display: flex;}
+section > form > div > .join_box > .Area_choice > select {text-align: center;}
+section > form > div > .join_box > .text_box > div,
+section > form > div > .join_box > .phone > div,
+section > form > div > .join_box > .date > div,
+section > form > div > .join_box > .E_mail > div,
+section > form > div > .join_box > .Area_choice > div{width: 30%; font-size: 20px; font-weight: 800;color: rgb(255, 125, 39,0.92);}
+
+section > form > div > .join_box > .text_box > input{width: 70%; height: 30px; border: 1px solid gray; border-radius: 5px; font-size: 15px;}
+section > form > div > .join_box > .phone > select,
+section > form > div > .join_box > .phone > input{width: 21%; height: 30px; box-sizing: border-box; border: 1px solid gray; border-radius: 5px; font-size: 12px;}
+section > form > div > .join_box > .date > input{width: 25%; height: 30px; border: 1px solid gray; border-radius: 5px; box-sizing: border-box;font-size: 12px; text-align: center;}
+section > form > div > .join_box > .E_mail{width: 100%; height: 80px; display: flex;}
+section > form > div > .join_box > .E_mail > .email_box{ display: flex; width: 70%;}
+section > form > div > .join_box > .E_mail > .email_box > .first_em{display: flex; width: 100%; height: 30px;}
+section > form > div > .join_box > .E_mail > .email_box > .first_em > input{width: 100%;height: 30px;border: 1px solid gray; border-radius: 5px;box-sizing: border-box; font-size: 16px;}
+section > form > div > .join_box > .E_mail > .email_box > .second_em {width: 100%;}
+section > form > div > .join_box > .E_mail > .email_box > .second_em > select{width: 100%; height: 30px;border: 1px solid gray; border-radius: 5px; box-sizing: border-box;}
+section > form > div > .join_box > .E_mail > .email_box > .second_em > input{width: 100%; height: 30px; margin-top: 10px; border: 1px solid gray;  border-radius: 5px; box-sizing: border-box; font-size: 16px;}
+
+section > form > div > .join_box > .Area_choice > select{height: 30px; font-size: 12px; border: 1px solid gray; border-radius: 5px; margin-right: 10px;}
+/* section > form > div > .join_box > .join_result {width: 100%; height: 50px; display: flex; justify-content: center;}
+section > form > div > .join_box > .join_result > button{width: 100px; height: 30px;  margin: 0 20px;}
+section > form > div > .join_box > .join_result > button{width: 100px; height: 25px; display: inline-block; } */
+.join_result{display: flex;}
+.join_result > button{
+    width: 50%; height: 50px;
+    margin-right: 10px;
+    background-color: rgba(255, 125, 39,0.92);
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.join_result > button:hover{
+    color: #fff;
+    opacity: 0.8;
+}
+
+section > form > div > .join_box > .consent > div{display: flex; justify-content: space-between; padding: 0 50px; font-size: 20px; margin: 30px 0px; line-height: 100%; align-items: center;}
+section > form > div > .join_box > .consent > div > p{line-height: 30px;}
+section > form > div > .join_box > .consent > div > input {zoom: 1.5;}
+section > form > div > .join_box > .consent > div > button{cursor: pointer; padding: 4px; border-radius: 5px; font-size: 16px;} 
+
+
+
+.modal_wrap{ display: none; width: 550px; position: absolute; top:50%; left: 50%; margin: -250px 0 0 -250px; background:white; z-index: 3; padding: 20px; border-radius: 20px;}
+.black_bg{ display: none; position: absolute; content: ""; width: 100%; height: 100%; background-color:rgba(0, 0,0, 0.5); top:0; left: 0; z-index: 2;}
+.modal_close{width: 26px; height: 26px; position: absolute; top: -30px; right: 0;   }
+.modal_close> a{ display: block; width: 100%; height: 100%; background:url(https://img.icons8.com/metro/26/000000/close-window.png); text-indent: -9999px; background-color: white;}
+
+
+/* 위치값 잡아주기 */
+.region_select{display: flex; justify-content: center; align-items: center; border: 1px solid black; font-size: 25px; height: 50px;}
+section > form > div > .join_box > .consent > div > div > div > .textarea{ border: 1px solid black; font-size: 20px; max-height: 500px;}
+section > form > div > .join_box > .consent > div > div > div > .textarea > p {overflow: scroll; max-height: 500px;}
+
+.btn-area{
+    margin-top: 10px; display: flex; justify-content: space-around;
+}
+.btn-area button{
+    width: 180px; height: 50px;
+    background-color: rgb(255, 125, 39,0.92);
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.btn-area button > a{line-height: 100%;}
+.btn-area button > a:visited{color: white;}

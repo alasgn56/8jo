@@ -1,0 +1,85 @@
+*{margin: 0; padding: 0; font-family: 'Jua', sans-serif;}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("../img/back.png") no-repeat center;
+    background-size: cover;
+    
+}
+
+.login-form{
+    position: relative; z-index: 2;
+    background-color : white;
+    border-radius: 20px;
+    padding:70px 100px;
+}
+.login-form h1{
+    font-size: 32px; color:rgb(255, 125, 39,0.92);
+    text-align: center;
+    margin-bottom: 60px;   
+}
+.int-area {  
+    width: 400px;
+    margin-top: 20px;
+}
+.int-area:first-child{
+    margin-top: 0;
+}
+.int-area input{
+    width: 100%;
+    padding: 20px 10px 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #999;
+    font-size: 18px; color: black;
+    outline: none;
+}
+.int-area input::placeholder{
+
+    color: rgb(196, 196, 196);
+}
+
+.btn-area{
+    margin-top: 30px;
+}
+.btn-area button{
+    width: 100%; height: 50px;
+    background-color: rgb(255, 125, 39,0.92);
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+}
+.caption{
+
+    margin-top: 20px;
+    text-align: center;
+}
+.caption a{
+
+    font-size: 15px;
+    color: #999;
+    text-decoration: none;
+}
+.join_box{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: #999;
+}
+.join_box > a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #999;
+    font-weight: 900;
+}
+.chkbox{
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size: 15px;
+    color: #999;
+}
+.chkbox > span{margin-left: 10px;}

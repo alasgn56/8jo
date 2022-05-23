@@ -1,0 +1,41 @@
+*{list-style: none; text-decoration: none;
+}
+.region_select{display: flex; justify-content: center; align-items: center;}
+
+
+fieldset > div > div > .region1 > a{
+    color: black;
+
+
+}
+.region1{
+
+    border: 1px solid black;
+    border-bottom: 0;
+    padding: 5px 3px;
+
+}
+
+
+.button_box{
+
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.button_box > button{
+    margin: 20px;
+    padding: 10px 15px;
+
+}
+
+
+
+
+
+
+

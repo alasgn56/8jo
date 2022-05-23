@@ -1,0 +1,108 @@
+*{margin:0px auto; padding : 0px;  color: black; text-decoration: none; list-style : none;}
+
+
+body > section > div.container {width: 80%;}
+
+section.section1{margin: 0px; height: 100px;}
+section.section1>div{display: flex; justify-content: space-between; align-items: center;}
+section.section1>div>div{height: 100%; font-size: 20px; margin: 0; justify-content: center; line-height: 50px;}
+section.section1>div>div>h3{font-size: 40px;}
+section.section1>div>div>a{padding-right: 20px; opacity: 0;}
+
+
+
+
+
+
+
+
+
+
+section.section2{display: block; padding-bottom: 20px;}
+section.section2>div.a{position: relative; overflow: hidden;}
+
+section.section3{margin: 0px; padding: 0px; font-size: 18px;}
+section.section3>div{display: flex; width: 100%;}
+section.section3>div>div.left{width: 70%; padding-right: 50px;}
+section.section3>div>div.left>ul{margin-bottom: 50px;}
+section.section3>div>div.left>ul>ul{display:flex;}
+section.section3>div>div.left>ul>ul:nth-child(10){padding: 20px 0; justify-content: center;}
+section.section3>div>div.left>ul>ul:nth-child(11)>div{display: block; width: 80%;}
+section.section3>div>div.left>ul>ul:nth-child(11)>div>li>span{font-size: 14px;}
+section.section3>div>div.left>ul>ul:nth-child(11)>div>li>span:first-child{text-align: left;margin: 0;}
+section.section3>div>div.left>ul>ul:nth-child(11)>div>li>span:last-child{text-align: end; margin: 0;}
+section.section3>div>div.left>ul>ul:nth-child(11)>div>li{display: flex; justify-content: space-between;}
+section.section3>div>div.left>ul>ul:nth-child(11)>li{width: 20%;}
+
+
+
+
+
+section.section3>div>div.left>ul>ul.map>div{display: flex;}
+section.section3>div>div.left>ul>ul>li{border-top: solid 1px rgba(128, 128, 128, 0.137); padding: 10px 0px 10px 10px ;}
+section.section3>div>div.left>ul>ul>li:first-child{width: 20%;}
+section.section3>div>div.left>ul>ul>li:last-child{width: 80%; font-size: 14px;}
+section.section3>div>div.left>div>div>div>div{display: flex; width: 100%;}
+section.section3>div>div.left>div>div>div>div>.tab_text{display:flex; border: solid 1px rgba(128, 128, 128, 0.308);  width: 100%;}
+section.section3>div>div.left>div>div>div>div>.tab_text>div{margin: 0;}
+section.section3>div>div.left>div>div>div>div>.tab_text>div>p{padding: 10px 0;}
+section.section3>div>div.left>div>div>div>div>.tab_text>div>p.b{font-size: 12px;}
+section.section3>div>div.left>div>div>div>div>div>img{display: block; height: 100px;}
+section.section3>div>div.left>div>div>div>div>div>div:first-child>a>img{height: 100px; padding: 15px;}
+section.section3>div>div.left>div>div>div>div>div>div>div>img{height: 100px; width: 130px;}
+
+
+
+section.section3>div>div.right{width: 30%;}
+section.section3>div>div.right>div.button{display: flex; width: 100%; height: 40px;}
+section.section3>div>div.right>div.button>button{width: 50%; font-size: 17px; border: none; margin-bottom: 5px; background-color: white; }
+section.section3>div>div.right>div.review{height: 50px; text-align: center; line-height: 50px; background-color: rgba(255, 166, 0, 0.493);}
+section.section3>div>div.right>div.tag{margin: 20px 0 ; padding: 20px 0;}
+section.section3>div>div.right>div.tag>p{font-size: 20px; border-bottom: solid 1px rgba(128, 128, 128, 0.349); padding: 0 10px;}
+section.section3>div>div.right>div.tag>div{display: flex; padding-top: 15px; flex-wrap: wrap}
+section.section3>div>div.right>div.tag>div>a{background-color: lightblue; margin: 5px; padding: 10px; border-radius: 20px;}
+section.section3>div>div.right>div.shoplist>p{font-size: 20px; padding: 20px;}
+section.section3>div>div.right>div.shoplist>div{width: 100%;}
+section.section3>div>div.right>div.shoplist>div>div{display: flex; border-top: 1px solid rgba(128, 128, 128, 0.329); border-bottom: 1px solid rgba(128, 128, 128, 0.342);}
+section.section3>div>div.right>div.shoplist>div>div>a{display: flex;  margin: 0; width: 100%; }
+section.section3>div>div.right>div.shoplist>div>div>a>img{width: 30%; height: 100px; padding: 10px;}
+section.section3>div>div.right>div.shoplist>div>div>a>p{width: 70%;}
+section.section3>div>div.right>div.shoplist>div>div>a>p>span{font-size: 20px;}
+
+.slidebox { background-size: cover; position: relative; width: 100%; display: flex; justify-content: center;}
+.slidebox .slidelist {font-size: 0px; height: 500px; width: 1500px; text-align: center; position:relative;white-space:nowrap;overflow:hidden; padding: auto;}
+.slidebox .slidelist .slideitem {width: 25%; text-align: center; position:relative;display:inline-block;background-color:transparent; transition:all 0.5s;}
+.slidebox .slidelist .slideitem>div>img{height: 500px; width: 100%;}
+.slidebox .slide-control [class*="control"] label {position:absolute;top:50%;transform:translateY(-50%);padding:250px;cursor:pointer;}
+.slidebox .slide-control [class*="control"] label.prev {left:10px;background:transparent url(/images/min/left.png) center center / 50% no-repeat;}
+.slidebox .slide-control [class*="control"] label.next {right:20px; background:transparent url(/images/min/right.png) center center / 50% no-repeat;}
+[name="slide"] {display:none;}
+#slide01:checked ~ .slidelist .slideitem {left:0;}
+#slide02:checked ~ .slidelist .slideitem {left:-25%;}
+#slide03:checked ~ .slidelist .slideitem {left:-50%;}
+
+
+
+.slide-control [class*="control"] {display:none;}
+#slide01:checked ~ .slide-control .control01 {display:block;}
+#slide02:checked ~ .slide-control .control02 {display:block;}
+#slide03:checked ~ .slide-control .control03 {display:block;}
+#slide04:checked ~ .slide-control .control04 {display:block;}
+#slide05:checked ~ .slide-control .control05 {display:block;}
+#slide06:checked ~ .slide-control .control06 {display:block;}
+
+.tab_menu{display: flex;}
+.tab_menu>label{width: 50%; padding: 15px; text-align: center; background-color:white; border-top:4px solid black ;}
+.tab_menu>label:first-child{margin-right:5px;}
+.tab_menu>label>li{font-size: 20px; font-weight: bolder;}
+.tab_parents{width: 100%;}
+.tab_content{display: none; width: 100%;}
+input[type=radio]{display: none;}
+input[id=first]:checked ~ .tab_parents > .a{display: block;}
+input[id=first]:checked ~ .tab_menu> label:first-child{ background-color: white;}
+input[id=second]:checked ~ .tab_parents > .b{display: block;}
+input[id=second]:checked ~ .tab_menu> label:nth-child(2){ background-color: white;}
+
+
+
+

@@ -1,0 +1,85 @@
+*{margin: 0; padding: 0; font-family: 'Jua', sans-serif;}
+body{background: url("../img/back.png") no-repeat center; background-size:cover;}
+body::before{ content: ""; position: absolute; z-index: 1;top: 0; right: 0; bottom: 0; left: 0;background-color: rgba(0,0,0,.0);}
+section{ width: 100vw; height: 100vh; display: flex; justify-content: center;align-items: center;}
+section > form { z-index: 3; background-color : rgba(255, 255, 255); border-radius: 20px; padding: 30px 50px;}
+
+section > form > div{width: 500px;height: 750px;display: flex; flex-direction: column;align-items: center; border-radius: 20px;}
+input{box-sizing: border-box;}
+section > form > div > .join_title{display: flex; margin: 0px 0 20px 0; font-size: 32px; color:rgb(255, 125, 39,0.92);}
+section > form > div > .join_title >img{width: 120px; height: 120px; padding-right: 20px;}
+section > form > div > .join_title >h3{line-height: 120px;}
+section > form > div > .join_box{width: 90%; display: flex;flex-direction: column; height: 100%;}
+section > form > div > .join_box > .text_box,
+section > form > div > .join_box > .phone,
+section > form > div > .join_box > .date,
+section > form > div > .join_box > .menu,
+section > form > div > .join_box > .Introduce,
+section > form > div > .join_box > .Sectors,
+section > form > div > .join_box > .Area_choice,
+section > form > div > .join_box > .Area_choice2{width: 100%; height: 50px; display: flex;}
+section > form > div > .join_box > .Sectors{font-size: 16px;}
+
+section > form > div > .join_box > .text_box > div,
+section > form > div > .join_box > .phone > div,
+section > form > div > .join_box > .date > div,
+section > form > div > .join_box > .menu > div,
+section > form > div > .join_box > .Introduce > div,
+section > form > div > .join_box > .Sectors > div,
+section > form > div > .join_box > .Area_choice > div,
+section > form > div > .join_box > .Area_choice2 > div{width: 30%; font-size: 20px; font-weight: 800; color:rgb(255, 125, 39,0.92);}
+section > form > div > .join_box > .Area_choice2 > input{width: 70%; height: 30px; color: rgb(87, 87, 87);border: 1px solid gray; border-radius: 5px;}
+
+section > form > div > .join_box > .date > input:nth-of-type(1){margin-right: 10px;}
+section > form > div > .join_box > .text_box > input{width: 70%; height: 30px; border: 1px solid gray; border-radius: 5px; font-size: 15px;}
+section > form > div > .join_box > .phone > select,
+section > form > div > .join_box > .phone > input{width: 21%; height: 30px; box-sizing: border-box; border: 1px solid gray; border-radius: 5px; font-size: 15px;}
+section > form > div > .join_box > .date > input{height: 30px; border: 1px solid gray; border-radius: 5px; box-sizing: border-box;font-size: 15px;}
+
+section > form > div > .join_box > .menu{width: 100%; height: 20%; display: flex;}
+section > form > div > .join_box > .menu > textarea{width: 70%; height: 80%;border-radius: 10px;}
+section > form > div > .join_box > .Introduce{width: 100%; height: 20%; display: flex;}
+section > form > div > .join_box > .Introduce > textarea{width: 70%; height: 80%; border-radius: 10px;}
+section > form > div > .join_box > .Area_choice > select{height: 30px; font-size: 12px; border: 1px solid gray; border-radius: 5px; margin-right: 10px;}
+
+
+.btn-area{
+    margin-top: 10px; display: flex; justify-content: space-around;
+}
+.btn-area button{
+    width: 180px; height: 50px;
+    background-color: rgb(255, 125, 39,0.92);
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* *{margin:0px auto; padding : 0px;  color: black; text-decoration: none; list-style : none;}
+body{width: 100%; height: 100vh;  }
+div.container {width: 60%;height: 100%; display: flex; flex-direction: column;  justify-content : center; align-items : center;}
+
+div>h2{margin-bottom:20px;}
+div>form>fieldset{width: 500px;}
+div>form>fieldset>div{display: flex; font-size: 20px; margin-bottom: 17px; }
+div>form>fieldset>div:first-child{margin-top: 15px;}
+div>form>fieldset>div>p:first-child{width: 25%; text-align: left; margin-left: 5px;}
+div>form>fieldset>div>p:last-child{width: 75%;}
+div>form>fieldset>div>p>input{padding: 5px 0;}
+div>form>fieldset>div>p>input:nth-child(2){margin-left: 10px;}
+div>form>fieldset>div>input.submit{padding: 10px 60px; background-color: white;}
+div>form>fieldset>div>input.reset{padding: 10px 60px; background-color: white;} */
+
+
+
+

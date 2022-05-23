@@ -1,0 +1,430 @@
+*{
+    margin:0px; padding:0px; box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    width: 100vw;
+}
+
+.profile{
+    width:80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile > .profile_custom01{
+    display: flex;
+    width: 100%;
+    height: 102px;
+    border: 1px solid;
+}
+
+.profile > .profile_custom01 > .button_box{
+   height: 100px;
+   width:  100px;
+   text-align: center;
+   border-left: 1px solid;
+   background-color: rgb(198, 242, 255);
+}
+
+.profile > .profile_custom01 > img{
+    border-right: 1px solid;
+}
+
+.profile > .profile_custom01 > .profile_box{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile > .profile_custom01 > .profile_box > div{
+    padding: 10px;
+    font-size: 13px;
+}
+
+.profile > .profile_custom01 > .profile_box > .profile_modify{
+    text-align: center;
+}
+
+.profile > .profile_custom01 > .profile_box > .profile_modify > a > button{
+    height: 30px;
+    width: 100px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 50px;
+    cursor: pointer;
+    background-color: rgb(223, 223, 223);
+    
+}
+
+.profile > .profile_custom01 > .profile_box > .profile_modify > a >button > i{
+    font-size:15px;
+}
+
+.profile > .profile_custom02{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+    overflow: hidden;   
+}
+
+.profile > .profile_custom02 > img{
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.profile > .profile_custom02 > .profile_route{
+    display:flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255, 255, 255, 0.664);
+    padding: 15px 50px;
+}
+
+.profile > .profile_custom03{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+.profile > .profile_custom03 > label{
+    width: 20%;
+    height: 60px;
+    line-height: 35px;
+    text-align: center;
+    border-bottom: 5px solid transparent;
+    border-top: 1px solid rgb(230, 230, 230);
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.profile > .profile_custom03 > label:hover{
+    transition: all 0.5s ease-in-out;
+    border-bottom: 5px solid rgb(169, 245, 255);
+}
+
+.profile > .profile_custom03 > label > p{
+    line-height: 5px;
+}
+
+.profile > .tap_container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/*나의 핫플레이스 맛집 시작*/
+.profile > .tap_container > .favorites{
+    width: 100%;
+    margin-top: 20px;
+    display: none;
+}
+
+.profile > .tap_container > .favorites > div{
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.profile > .tap_container > .favorites > .element{
+    width: 100%;
+    text-align: center;
+}
+
+.profile > .tap_container > .favorites > .element > .cell{
+    border: 1px solid rgb(230, 230, 230);
+    width: 200px;
+    height: 330px;
+    display: inline-block;
+    margin: 10px auto;
+}
+
+.profile > .tap_container > .favorites > .element > .cell > div{
+    height: 120px;
+    text-align: start;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.profile > .tap_container > .favorites > .element > .cell > div > p{
+    display: -webkit-box;
+    width: 180px;
+    height: 70px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+}
+
+.profile > .tap_container > .favorites > .element > .cell > .element_views{
+    display: flex;
+    width: 180px;
+    font-size: 12px;
+    text-overflow:ellipsis ;
+}
+/*나의 핫플레이스 맛집 끝*/
+
+/*나의 찜뽕*/
+.profile > .tap_container > .likelike{
+    display: none;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.profile > .tap_container > .likelike > div{
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.profile > .tap_container > .likelike > .element{
+    width: 100%;
+    text-align: center;
+}
+
+.profile > .tap_container > .likelike > .element > .cell{
+    width: 200px;
+    height: 330px;
+    display: inline-block;
+    border: 1px solid rgb(230, 230, 230);
+    margin: 10px auto;
+}
+
+.profile > .tap_container > .likelike > .element > .cell > div{
+    height: 120px;
+    width: 100%;
+    text-align: start;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.profile > .tap_container > .likelike > .element > .cell > div > p{
+    display: -webkit-box;
+    width: 180px;
+    height: 70px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+}
+
+.profile > .tap_container > .likelike > .element > .cell > .element_views{
+    display: flex;
+    width: 180px;
+    font-size: 12px;
+    text-overflow:ellipsis ;
+}
+/*나의 찜뽕 끝*/
+
+/*리뷰 시작*/
+.profile > .tap_container > .reviews{
+    display: none;
+    width: 100%;
+}
+
+.profile > .tap_container > .reviews > div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    margin-top: 20px;
+}
+
+.profile > .tap_container > .reviews > div > h4{
+    padding: 20px 0;
+}
+
+.profile > .tap_container > .reviews > div > div{
+    display: flex;
+    margin: 10px 20px;
+}
+
+.profile > .tap_container > .reviews > div > div > h3{
+    color: orange;
+}
+
+.profile > .tap_container > .reviews > div > div > p{
+    margin-left: 10px;
+    font-size: 13px;
+    line-height: 30px;
+}
+
+.profile > .tap_container > .reviews > div > div > a{
+    margin-left: 10px;
+}
+
+.profile > .tap_container > .reviews > div > .facon > a{
+    margin-left: 10px;
+    font-size: 12px;
+}
+/*리뷰 끝*/
+
+/*팔로잉 시작*/
+.profile > .tap_container > .following{
+    display: none;
+    width:100%;
+    white-space: normal;
+    text-align: center;
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.profile > .tap_container > .following > div{
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.profile > .tap_container > .following > div > h4{
+    padding: 20px 0;
+}
+
+.profile > .tap_container > .following > a{
+    display: inline-block;
+    width: 200px;
+    height: 160px;
+    border: 1px solid rgb(230, 230, 230);
+    margin: 10px auto;
+}
+
+.profile > .tap_container > .following > a > div{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    line-height: 30px;
+}
+/*팔로잉 끝*/
+
+/*팔로워 시작*/
+.profile > .tap_container > .follower{
+    display: none;
+    width:100%;
+    white-space: normal;
+    text-align: center;
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.profile > .tap_container > .follower > div{
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.profile > .tap_container > .follower > div > h4{
+    padding: 20px 0;
+}
+
+.profile > .tap_container > .follower > a{
+    display: inline-block;
+    width: 200px;
+    height: 160px;
+    border: 1px solid rgb(230, 230, 230);
+    margin: 10px auto;
+}
+
+.profile > .tap_container > .follower > a > div{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    line-height: 30px;
+}
+/*팔로워 끝*/
+
+.profile > input[type="radio"]{
+    display: none;
+}
+
+/*탭 기능 시작*/
+.profile > input[id="tap01"]:checked ~ .tap_container > .favorites{
+    display: block;
+}
+
+.profile > input[id="tap02"]:checked ~ .tap_container > .likelike{
+    display: block;
+}
+
+.profile > input[id="tap03"]:checked ~ .tap_container > .reviews{
+    display: block;
+}
+
+.profile > input[id="tap04"]:checked ~ .tap_container > .following{
+    display: block;
+}
+
+.profile > input[id="tap05"]:checked ~ .tap_container > .follower{
+    display: block;
+}
+
+
+
+
+
+
+.main{
+    background: url(img/slide.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.nav{
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.nav > h1{
+    width: 64px;
+}
+
+.nav > .nav-left{
+    width: 100%;
+    padding-left: 100px;
+}
+
+.nav > .nav-right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav > .nav-right > li{
+    margin-left: 50px;
+}
+
+.nav > ul > li{
+    height: 70px;
+}
+
+.nav > ul > li > a{
+    display: block;
+    color: white;
+    line-height: 70px;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.nav > ul > li:hover > a{
+    color: #3586ff;
+}

@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button, input, textarea {
+    font-size: 13px;
+}
+
+button:focus, button:active, input:focus, 
+input:active, textarea:focus, textarea:active {
+    outline: none;
+    box-shadow: none;
+}
+
+ul, ol, li {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section > .accuse_box{
+    width: 450px;
+    height: 500px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+section > .accuse_box > form > .box_title{
+    text-align: center;
+    margin-top: 20px;
+}
+
+section > .accuse_box > form > .checkboxs{
+    display: flex;
+    margin: 30px 30px;
+}
+section > .accuse_box > form > .checkboxs > h4{
+    margin-left: 20px;
+}
+
+section > .accuse_box > form > .checkboxs > input{
+    transform: scale(1.5) translateY(2.5px);
+}
+section > .accuse_box > form > .checkboxs > div{
+    margin-left: 20px;
+}
+
+section > .accuse_box > form > .checkboxs > div > textarea{
+    resize: none;
+}
+
+section > .accuse_box > form > .button_box{
+    display: flex;
+    justify-content: center;
+}
+
+section > .accuse_box > form > .button_box > a > button{
+    width: 100px;
+    height: 30px;
+    margin: 0 10px;
+}
