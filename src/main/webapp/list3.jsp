@@ -31,17 +31,7 @@
 };
 </script>
 <body>
-    <nav class="nav">
-        <h1><a href="http://127.0.0.1:5500/main.html"><img src="./process/img/로고-005.png" alt=""></a></h1>
-        <ul class="nav-right">
-            <li><a href="http://127.0.0.1:5500/list.html">맛집리스트</a><div></div></li>
-            <li><a href="http://127.0.0.1:5500/list.html">맛집찾기</a><div></div></li>
-            <li><a href="http://127.0.0.1:5500/addshop.html">맛집등록</a><div></div></li>
-            <li><a href="http://127.0.0.1:5500/addshop.html">맛집수정</a><div></div></li>
-            <li><a href="http://127.0.0.1:5500/login_m.html">로그인</a><div></div></li>
-            <li><a href="http://127.0.0.1:5500/join.html">회원가입</a><div></div></li>
-        </ul>
-    </nav>
+	<jsp:include page= "nav.jsp"/>
     <section>
         <div>
             <div class="a">

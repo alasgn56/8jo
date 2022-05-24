@@ -38,9 +38,9 @@
                     </div>
                 </div>
                 <div class="button_box">
-                    <a href="http://127.0.0.1:5500/index.html" style="display: inline-block;"><button>신고 접수</button></a>
+                    <a href="index.jsp" style="display: inline-block;"><button>신고 접수</button></a>
                     
-                    <a href="http://127.0.0.1:5500/index.html"><button>취소</button></a>
+                    <a href="index.jsp"><button>취소</button></a>
                 </div>
             </form>
        </div>

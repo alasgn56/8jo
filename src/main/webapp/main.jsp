@@ -19,14 +19,14 @@
     <section>
         <div class="main">
             <nav class="nav">
-                <h1><a href="http://127.0.0.1:5500/main.html"><img src="./process/img/로고-005.png" alt=""></a></h1>
+                <h1><a href="main.jsp"><img src="./process/img/로고-005.png" alt=""></a></h1>
                 <ul class="nav-right">
-                    <li><a href="http://127.0.0.1:5500/list.html">맛집리스트</a><div></div></li>
-                    <li><a href="http://127.0.0.1:5500/list.html">맛집찾기</a><div></div></li>
-                    <li><a href="http://127.0.0.1:5500/addshop.html">맛집등록</a><div></div></li>
-                    <li><a href="http://127.0.0.1:5500/addshop.html">맛집수정</a><div></div></li>
-                    <li><a href="http://127.0.0.1:5500/login_m.html">로그인</a><div></div></li>
-                    <li><a href="http://127.0.0.1:5500/join.html">회원가입</a><div></div></li>
+                    <li><a href="list.jsp">맛집리스트</a><div></div></li>
+                    <li><a href="list3.jsp">맛집찾기</a><div></div></li>
+                    <li><a href="addshop.jsp">맛집등록</a><div></div></li>
+                    <li><a href="addshop.jsp">맛집수정</a><div></div></li>
+                    <li><a href="login_m.jsp">로그인</a><div></div></li>
+                    <li><a href="join.jsp">회원가입</a><div></div></li>
                 </ul>
             </nav>
             <div>
@@ -292,7 +292,7 @@
             </div>
             <div class="list-row">
                 <div class="list-item">
-                    <a href="http://127.0.0.1:5500/shop.html">
+                    <a href="shop.jsp">
                         <img src="./process/img/6.jpg">
                         <div>
                             <div>
@@ -304,7 +304,7 @@
                     </a>
                 </div>
                 <div class="list-item">
-                    <a href="http://127.0.0.1:5500/shop.html">
+                    <a href="shop.jsp">
                         <img src="./process/img/6.jpg">
                         <div>
                             <div>
@@ -316,7 +316,7 @@
                     </a>
                 </div>
                 <div class="list-item">
-                    <a href="http://127.0.0.1:5500/shop.html">
+                    <a href="shop.jsp">
                         <img src="./process/img/6.jpg">
                         <div>
                             <div>
@@ -328,7 +328,7 @@
                     </a>
                 </div>
                 <div class="list-item">
-                    <a href="http://127.0.0.1:5500/shop.html">
+                    <a href="shop.jsp">
                         <img src="./process/img/6.jpg">
                         <div>
                             <div>
@@ -342,7 +342,7 @@
             </div>
             <div class="list-row">
                 <div class="list-item">
-                    <a href="http://127.0.0.1:5500/shop.html">
+                    <a href="shop.jsp">
                         <img src="./process/img/6.jpg">
                         <div>
                             <div>
@@ -354,7 +354,7 @@
                     </a>
                 </div>
                 <div class="list-item">
-                    <a href="http://127.0.0.1:5500/shop.html">
+                    <a href="shop.jsp">
                         <img src="./process/img/6.jpg">
                         <div>
                             <div>
@@ -366,7 +366,7 @@
                     </a>
                 </div>
                 <div class="list-item">
-                    <a href="http://127.0.0.1:5500/shop.html">
+                    <a href="shop.jsp">
                         <img src="./process/img/6.jpg">
                         <div>
                             <div>
@@ -378,7 +378,7 @@
                     </a>
                 </div>
                 <div class="list-item">
-                    <a href="http://127.0.0.1:5500/shop.html">
+                    <a href="shop.jsp">
                         <img src="./process/img/6.jpg">
                         <div>
                             <div>
@@ -405,7 +405,7 @@
             <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
         </ul>
         <ul class="menu">
-            <li><a href="http://127.0.0.1:5500/main.html">Home</a></li>
+            <li><a href="main.jsp">Home</a></li>
             <li><a href="">About</a></li>
             <li><a href="">footer</a></li>
             <li><a href="">footer</a></li>

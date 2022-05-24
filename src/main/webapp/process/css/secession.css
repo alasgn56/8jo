@@ -1,4 +1,4 @@
-*{margin:0px auto; padding : 0px;  color: black; text-decoration: none; list-style : none; box-sizing: border-box;}
+*{margin:0; padding : 0px;  color: black; text-decoration: none; list-style : none; box-sizing: border-box;}
 body{width: 100%; height: 100vh;  }
 div.container {width: 80%;height: 100%; display: flex; flex-direction: column;  justify-content : center; align-items : center;}
 
@@ -15,61 +15,3 @@ div > form > fieldset > div:nth-child(3) > p{margin: 0;}
 div > form > fieldset > div:nth-child(4){text-align: center; margin: 20px 0 ;}
 div > form > fieldset > div:nth-child(4) > a {padding: 20px;}
 div > form > fieldset > div:nth-child(4) > a > input{padding:  10px 40px; background-color: white;}
-
-
-
-.main{
-    background-size: cover;
-    width: 100%;
-    height: 70px;
-    background-color: #3586ff;
-}
-
-.nav{
-    width: 90vw;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-}
-
-.nav > h1{
-    width: 64px;
-}
-
-.nav > .nav-left{
-    width: 100%;
-    padding-left: 100px;
-}
-
-.nav > .nav-right {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.nav > .nav-right > li{
-    margin-left: 50px;
-}
-
-.nav > ul > li{
-    height: 70px;
-}
-
-.nav > ul > li > a{
-    display: block;
-    color: white;
-    line-height: 70px;
-    font-weight: 900;
-    width: 100%;
-    height: 50px;
-    transition: all 1s ease;
-}
-
-.nav > ul > li > a:hover{
-    border-bottom: 1px solid white;
-    transition: all 1s ease;
-}
-

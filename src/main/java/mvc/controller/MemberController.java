@@ -40,8 +40,7 @@ public class MemberController extends HttpServlet{
 		}
 		if(command.equals("/2.do")) {
 			LoginDAO dao1= LoginDAO.getInstance();
-			dao1.Login(request);
-			response.sendRedirect("main.jsp");
+			dao1.Login(request, response);
 		}
 	}
 

@@ -6,11 +6,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./process/css/shop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./process/css/shop.css?ver=1.1">
     <script src="https://kit.fontawesome.com/d747d6755a.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
+	<jsp:include page= "nav.jsp"/>
     <section class="section1">
         <div class="container">
             <div>
@@ -157,7 +161,7 @@
                             <div class="inner_box">
                                 <div class="tab_text">
                                     <div>
-                                        <a href="http://127.0.0.1:5500/index%20copy.html"><img src="./process/img/min/11.jpg" alt=""></a>
+                                        <a href="index%20copy.jsp"><img src="./process/img/min/11.jpg" alt=""></a>
                                     </div>
                                     <div>
                                         <h4>닉네임</h4>
@@ -175,7 +179,7 @@
                             <div class="inner_box">
                                 <div class="tab_text">
                                     <div>
-                                        <a href="http://127.0.0.1:5500/index%20copy.html"><img src="./process/img/min/12.jpg" alt=""></a>
+                                        <a href="index%20copy.jsp"><img src="./process/img/min/12.jpg" alt=""></a>
                                     </div>
                                     <div>
                                         <h4>닉네임</h4>
@@ -193,7 +197,7 @@
                             <div class="inner_box">
                                 <div class="tab_text">
                                     <div>
-                                        <a href="http://127.0.0.1:5500/index%20copy.html"><img src="./process/img/min/13.jpg" alt=""></a>
+                                        <a href="index%20copy.jsp"><img src="./process/img/min/13.jpg" alt=""></a>
                                     </div>
                                     <div>
                                         <h4>닉네임</h4>
@@ -213,7 +217,7 @@
                             <div class="inner_box">
                                 <div class="tab_text">
                                     <div>
-                                        <a href="http://127.0.0.1:5500/index%20copy.html"><img src="./process/img/13.jpg" alt=""></a>
+                                        <a href="index%20copy.jsp"><img src="./process/img/13.jpg" alt=""></a>
                                     </div>
                                     <div>
                                         <h4>닉네임</h4>
@@ -231,7 +235,7 @@
                             <div class="inner_box">
                                 <div class="tab_text">
                                     <div>
-                                        <a href="http://127.0.0.1:5500/index%20copy.html"><img src="./process/img/min/11.jpg" alt=""></a>
+                                        <a href="index%20copy.jsp"><img src="./process/img/min/11.jpg" alt=""></a>
                                     </div>
                                     <div>
                                         <h4>닉네임</h4>
@@ -249,7 +253,7 @@
                             <div class="inner_box">
                                 <div class="tab_text">
                                     <div>
-                                        <a href="http://127.0.0.1:5500/index%20copy.html"><img src="./process/img/min/12.jpg" alt=""></a>
+                                        <a href="index%20copy.jsp"><img src="./process/img/min/12.jpg" alt=""></a>
                                     </div>
                                     <div>
                                         <h4>닉네임</h4>
@@ -274,7 +278,7 @@
                     <button><i class="fa-solid fa-thumbs-up"></i>좋아요</button>
                     <button><i class="fa-regular fa-star"></i>즐겨찾기</button>
                 </div>                   
-                <div class="review"><a href="http://127.0.0.1:5500/list2.html">리뷰쓰기</a></div>
+                <div class="review"><a href="list2.jsp">리뷰쓰기</a></div>
                 <div class="tag">
                     <p>태그</p>
                     <div>

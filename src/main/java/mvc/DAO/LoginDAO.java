@@ -5,8 +5,11 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
-import org.apache.catalina.ha.backend.Sender;
+import javax.servlet.http.HttpServletResponse;
+import javax.websocket.SendResult;
 
+import org.apache.catalina.ha.backend.Sender;
+import javax.servlet.RequestDispatcher;
 import mvc.model.DBConn;
 
 public class LoginDAO {
@@ -20,7 +23,7 @@ public class LoginDAO {
 		return instance;
 	}
 	
-	public void Login(HttpServletRequest request) {
+	public void Login(HttpServletRequest request, HttpServletResponse response) {
 		String id=request.getParameter("id");
 		String pw=request.getParameter("pw");
 		
@@ -29,20 +32,20 @@ public class LoginDAO {
 		String sql;
 		ResultSet rs = null;
 		String[] array = new String[2];
-		
 		try {
 			conn = DBConn.dbconn();
-			sql="select * from where m_id = ?, m_password = ?";
+			sql="select * from member where m_id = ? and m_password = ?";
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, id);
 			pstmt.setString(2, pw);
 			rs = pstmt.executeQuery();
-			
 			if(rs.next()) {
-				System.out.println("로그인성공시");
+				System.out.println("로그인성공");
+				response.sendRedirect("main.jsp");
 			}
-			else {
-				System.out.println("로그인실패시");
+			else {	
+				System.out.println("로그인실패");
+				response.sendRedirect("login_m.jsp?error=1");		
 			}	
 		}catch(Exception e) {			
 			e.printStackTrace();

@@ -19,22 +19,6 @@
     }
 </script>
 <body>
-    <div class="main">
-        <nav class="nav">
-            <h1><a href="http://127.0.0.1:5500/main.html">로고</a></h1>
-            <ul class="nav-right">
-                <li><a href="http://127.0.0.1:5500/list.html">맛집리스트</a></li>
-                <li><a href="http://127.0.0.1:5500/list.html">맛집찾기</a></li>
-                <li><a href="http://127.0.0.1:5500/addshop.html">맛집등록</a></li>
-                <li><a href="http://127.0.0.1:5500/addshop.html">맛집수정</a></li>
-                
-            </ul>
-            <ul class="nav-right">
-                <li><a href="http://127.0.0.1:5500/login_m.html">로그인</a></li>
-                <li><a href="http://127.0.0.1:5500/join.html">회원가입</a></li>
-            </ul>
-        </nav>
-    </div>
     <div class="container" >
         <form name="b" method="post" action="http://127.0.0.1:5500/main.html">
             <fieldset>

@@ -13,20 +13,16 @@
     <link rel="stylesheet" href="./process/css/login_m.css?ver=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css?ver=1.0" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
+<%
+	String error=request.getParameter("error");
+	if(error !=null){
+%>
 <script>
-    let id = $('#id');
-    let pw = $('#pw');
-    let btn = $('#btn');
-
-    $(btn).on('click',function(){
-        if($(id).val()==""){
-            $(id).next('label').addClass('warning');
-        }
-        else if($(pw).val()==""){
-            $(pw).next(label).addClass('warning');
-        }
-    });
+	alert("로그인에 실패했습니다.");
 </script>
+<%
+	}
+%>
 <body>
     <section class="login-form">
         <h1>로그인</h1>

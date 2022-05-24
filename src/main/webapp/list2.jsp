@@ -32,7 +32,7 @@
                 </div>
                 <div class="a">
                     <p class="review_subject">리뷰제목</p>
-                    <p><input type="text">    </p>
+                    <p><input type="text"></p>
                 </div>
                 <div class="b">
                     <p class="review_content">리뷰내용 </p>

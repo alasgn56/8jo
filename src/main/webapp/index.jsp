@@ -11,6 +11,7 @@
     <script src="https://kit.fontawesome.com/74c64bfa0a.js" crossorigin="anonymous"></script>
 </head>
 <body>
+	<jsp:include page= "nav.jsp"/>
     <!--마이페이지 즐겨찾기-->
     <section class="profile">
         <div class="profile_custom01">
