@@ -46,21 +46,21 @@
                         <div>지역 선택</div>
                         <select name="join_address1">
                             <option>::시도선택::</option>
-                            <option value="gsnd">경상남도</option>
+                            <option value="경상남도">경상남도</option>
                         </select>
                         <select name="join_address2">
                             <option>::상세선택::</option>
-                            <option value="cws">창원시</option>
-                            <option value="mhab">창원시 마산합포구</option>
-                            <option value="mhwe">창원시 마산회원구</option>
-                            <option value="cwss">창원시 성산구</option>
-                            <option value="cweu">창원시 의창구</option>
-                            <option value="cwjin">창원시 진해구</option>
+                            <option value="창원시">창원시</option>
+                            <option value="창원시 마산합포구">창원시 마산합포구</option>
+                            <option value="창원시 마산회원구">창원시 마산회원구</option>
+                            <option value="창원시 성산구">창원시 성산구</option>
+                            <option value="창원시 의창구">창원시 의창구</option>
+                            <option value="진해구">창원시 진해구</option>
                         </select>
                     </div>
                     <div class="Area_choice2">  
                         <div>상세주소</div>   
-                        <input type="text" value="세부주소를 입력해주세요.">   
+                        <input type="text" name="join_address3" value="세부주소를 입력해주세요.">   
                     </div>     
                     <div class="Sectors">
                         <div>업종</div>
@@ -70,12 +70,12 @@
                     </div>
                     <div class="menu">
                         <div>메뉴</div>
-                        <textarea style="resize: none;"></textarea>
+                        <textarea name="menu_textarea" style="resize: none;"></textarea>
 
                     </div>
                     <div class="Introduce">
                         <div>매장소개</div>
-                        <textarea style="resize: none;"></textarea>
+                        <textarea name="store_self" style="resize: none;"></textarea>
 
                     </div>  
                     <div class="btn-area">
