@@ -9,7 +9,7 @@ input{box-sizing: border-box;}
 section > form > div > .join_title{display: flex; margin: 0px 0 20px 0; font-size: 32px; color:rgb(255, 125, 39,0.92);}
 section > form > div > .join_title >img{width: 120px; height: 120px; padding-right: 20px;}
 section > form > div > .join_title >h3{line-height: 120px;}
-section > form > div > .join_box{width: 90%; display: flex;flex-direction: column; height: 100%;}
+section > form > div > .join_box{width: 100%; display: flex;flex-direction: column; height: 100%;}
 section > form > div > .join_box > .text_box,
 section > form > div > .join_box > .phone,
 section > form > div > .join_box > .date,
@@ -46,13 +46,14 @@ section > form > div > .join_box > .Area_choice > select{height: 30px; font-size
 .btn-area{
     margin-top: 10px; display: flex; justify-content: space-around;
 }
-.btn-area button{
+.btn-area > input{
     width: 180px; height: 50px;
     background-color: rgb(255, 125, 39,0.92);
     color: #fff;
     font-size: 20px;
     border: none;
     border-radius: 25px;
+    cursor: pointer;
 }
 
 

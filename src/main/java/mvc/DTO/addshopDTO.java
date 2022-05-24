@@ -1,4 +1,4 @@
-package mvc.model;
+package mvc.DTO;
 
 public class addshopDTO {
 	private String name;

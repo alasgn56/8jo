@@ -1,9 +1,10 @@
-package mvc.model;
+package mvc.DAO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.util.ArrayList;
 import java.util.Arrays;
+import mvc.model.DBConn;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -21,7 +22,9 @@ public class addshopDAO {
 		return instance;
 	}
 	
-	// 회원정보 추가하기
+	
+	
+	// 매장 정보 등록
 	
 	public void insertMember(HttpServletRequest request) {
 		Connection conn = null;
@@ -40,8 +43,9 @@ public class addshopDAO {
 			String menu_textarea = request.getParameter("menu_textarea");
 			String store_self = request.getParameter("store_self");
 			
+			
 			conn = DBConn.dbconn();
-			sql = "insert into addstore(s_name,s_stime,s_ftime,m_phone,s_adress,s_category,s_Mtext,s_MItext) values(?,?,?,?,?,?,?,?)";
+			sql = "insert into addstore(s_name,s_stime,s_ftime,s_phone,s_adress,s_category,s_Mtext,s_MItext) values(?,?,?,?,?,?,?,?)";
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, name);
 			pstmt.setString(2, stime);

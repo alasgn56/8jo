@@ -9,9 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import mvc.DAO.addshopDAO;
 import mvc.DAO.LoginDAO;
 import mvc.DAO.MemberDAO;
-import mvc.DTO.MemberDTO;
 
 public class MemberController extends HttpServlet{
 	
@@ -41,6 +41,12 @@ public class MemberController extends HttpServlet{
 		if(command.equals("/2.do")) {
 			LoginDAO dao1= LoginDAO.getInstance();
 			dao1.Login(request);
+			response.sendRedirect("main.jsp");
+		}
+		
+		if(command.equals("/3.do")) { // 매장 등록
+			addshopDAO adshDAO= addshopDAO.getInstance();
+			adshDAO.insertMember(request);
 			response.sendRedirect("main.jsp");
 		}
 	}

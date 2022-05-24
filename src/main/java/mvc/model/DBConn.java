@@ -25,7 +25,6 @@ public class DBConn extends HttpServlet{
 			
 			System.out.println("데이터베이스 연결을 실패했습니다. <br>");
 			System.out.println("SQLException: " + ex.getMessage());
-		
 		}
 		return conn;
 	}
