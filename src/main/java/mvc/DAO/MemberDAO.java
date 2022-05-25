@@ -1,16 +1,13 @@
-package mvc.model;
+package mvc.DAO;
 
-import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.SQLException;
 
 import javax.servlet.http.HttpServletRequest;
 
 import mvc.model.*;
 
 public class MemberDAO {
-	private static final Connection DBConnection = null;
 	private static MemberDAO instance;
 	
 	private MemberDAO() {} 
@@ -74,9 +71,9 @@ public class MemberDAO {
 		
 	}
 	
-	
-	
 	// 회원정보 삭제하기
+	
+	
 	
 	// 회원아이디 중복확인
 }

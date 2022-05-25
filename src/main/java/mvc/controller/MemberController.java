@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import mvc.model.MemberDAO;
-import mvc.model.MemberDTO;
+import mvc.DAO.MemberDAO;
+import mvc.DTO.MemberDTO;
 
 public class MemberController extends HttpServlet{
 	

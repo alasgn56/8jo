@@ -44,6 +44,38 @@ function idon(){
         var abc = document.getElementById('email').value;
         document.getElementById('emailinput').value = abc;
     }
+
+function check(){
+	
+	var phone2 = document.getElementById("phone2");
+	var phone3 = document.getElementById("phone3");
+	var joinpw = document.getElementById("joinpw");
+	var joinpwchk = document.getElementById("joinpwchk");
+	var chk = document.getElementById("chk");
+	var chksub = document.getElementById("chksub");
+	
+	if(joinpw.value !="" && joinpw.value == joinpwchk.value){
+		chk.innerHTML='비밀번호가 일치합니다.';
+		chk.style.color='blue';
+		chksub.style.display='flex';
+	}
+	else{
+		chk.innerHTML='비밀번호가 일치하지 않습니다.';
+		chk.style.color='red';
+		chksub.style.display='flex';
+	}
+	
+	// 핸드폰 번호 체크
+	if(isNaN(phone2.value)){
+		alert("숫자만 입력하세요");
+		return false;
+	}
+	
+	if(isNaN(phone3.value)){
+		alert("숫자만 입력하세요");
+		return false;
+	}
+}
 </script>
 
 <body>
@@ -57,19 +89,24 @@ function idon(){
                 <div class="join_box">
                     <div class="text_box">
                         <div>이름</div>
-                        <input type="text" name="name" placeholder=" name">
+                        <input type="text" name="name" placeholder=" name" required>
                     </div>
                     <div class="text_box">
                         <div>아이디</div>
-                        <input type="text" name="joinid" placeholder=" ID">
+                        <input type="text" name="joinid" placeholder=" ID" required>
                     </div>
                     <div class="text_box">
                         <div>비밀번호</div>
-                        <input type="password" name="joinpw" placeholder=" Password">
+                        <input type="password" name="joinpw" id="joinpw" placeholder=" Password" onchange="check()"required>
                     </div>
+                    
                     <div class="text_box">
                         <div>비밀번호 확인</div>
-                        <input type="password" name="joinpwchk" placeholder=" Password Check">
+                        <input type="password" name="joinpwchk" id="joinpwchk" placeholder=" Password Check" onchange="check()" required>
+                    </div>
+                    <div class="text_box" id="chksub" style="display:none;height:20px;margin-top:-17px;">
+                    	<div style="width:30%;">&nbsp;</div>
+                    	<div id="chk" style="width:60%;font-size:13px;"></div>
                     </div>
                     <div class="phone">
                         <div>연락처</div>
@@ -80,8 +117,8 @@ function idon(){
                             <option value="017">017</option>
                             <option value="019">019</option>
                         </select>&nbsp;-&nbsp; 
-                        <input type="text" maxlength="4" size="4" name="phone2">&nbsp;-&nbsp; 
-                        <input type="text" maxlength="4" size="4" name="phone3">
+                        <input type="text" maxlength="4" size="4" id="phone2" name="phone2" onchange="check()" required>&nbsp;-&nbsp; 
+                        <input type="text" maxlength="4" size="4" id="phone3" name="phone3" onchange="check()" required>
                     </div>
                     <div class="date">
                         <div>생년월일</div>
@@ -91,7 +128,7 @@ function idon(){
                         <div>이메일</div>
                         <div class="email_box">
                             <div class="first_em">
-                                <input type="text" name="email1"  maxlength="20">&nbsp;@&nbsp; 
+                                <input type="text" name="email1"  maxlength="20" required>&nbsp;@&nbsp; 
                             </div> 
                             <div class="second_em">
                                 <select id="email" name="email2" onchange="idon()">
@@ -333,8 +370,8 @@ function idon(){
                         </div>
                     </div>   
                     <div class="btn-area">
-                        <button type="submit"><a href="#">등록</a></button>
-                        <button><a href="#">취소</a></button>
+                        <button type="submit">등록</button>
+                        <button><a href="main.jsp">취소</a></button>
                     </div>   
                 </div>
             </div>
